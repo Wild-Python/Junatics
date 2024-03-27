@@ -12,6 +12,7 @@ class JunaticsManager(models.Manager):
 
 class Junatics(models.Model):
     name = models.CharField(max_length=256)
+    slug = models.SlugField(max_length=256)
     price = models.DecimalField(max_digits=6, decimal_places=2)
     image = models.ImageField(upload_to=user_directory_path,
                               verbose_name='Product Image:',
