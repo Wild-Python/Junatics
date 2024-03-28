@@ -32,63 +32,63 @@
     <body>
     
         <div class="header">
-        <div class="frame1">
-            <img src="{% static 'assests/favicon/junatics1-removebg-preview.png' %}" alt="">
-            <div class="search">
-                <form action="">
-                    <label>
-                        <input type="search" placeholder="Search Any Thing" class="bar">
-                    </label>
-                </form>
-                <button>Search</button>
+            <div class="frame1">
+                <img src="{% static 'assests/favicon/junatics1-removebg-preview.png' %}" alt="">
+                <div class="search">
+                    <form action="">
+                        <label>
+                            <input type="search" placeholder="Search Any Thing" class="bar">
+                        </label>
+                    </form>
+                    <button>Search</button>
+                </div>
             </div>
-        </div>
-        <!-- Frame -->
-        <div class="navmenu" id="show">
-            <div class="frame2" id="navLinks">
-                <i class="fa fa-times" aria-hidden="true" onclick="hide()"></i>
-                <div class="icons">
-                    <div><i class="fa-regular fa-user ic"></i></div>
-                    <span><a href="#">Sign In</a></span>
+            <!-- Frame -->
+            <div class="navmenu" id="show">
+                <div class="frame2" id="navLinks">
+                    <i class="fa fa-times" aria-hidden="true" onclick="hide()"></i>
+                    <div class="icons">
+                        <div><i class="fa-regular fa-user ic"></i></div>
+                        <span><a href="#">Sign In</a></span>
+                    </div>
+                    <div class="icons">
+                        <div><i class="fa-solid fa-cart-shopping ic"></i></div>
+                        <span><a href="#">Cart</a></span>
+                    </div>
+                    <div class="icons">
+                        <div><i class="fa-regular fa-heart ic"></i></div>
+                        <span>Likes</span>
+                    </div>
+    
                 </div>
-                <div class="icons">
-                    <div><i class="fa-solid fa-cart-shopping ic"></i></div>
-                    <span><a href="#">Cart</a></span>
-                </div>
-                <div class="icons">
-                    <div><i class="fa-regular fa-heart ic"></i></div>
-                    <span>Likes</span>
-                </div>
-
             </div>
-        </div>
 
-        <i class="fa fa-bars" aria-hidden="true" onclick="show()"></i>
-    </div>
+            <i class="fa fa-bars" aria-hidden="true" onclick="show()"></i>
+        </div>
     
     
         <!-- Navbar -->
-    <div class="nav">
-        <div>
-            <button>Browse Categories</button>
+        <div class="nav">
+            <div>
+                <button>Browse Categories</button>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <a href="{% url 'junatics:home_page' %}">Home</a>
+                    </li>
+                    <li>Catalog</li>
+                    <li>
+                        <a href="{% url 'blog:blog_page' %}">Blog</a>
+                    </li>
+                    <li>Page</li>
+                    <li>About Us</li>
+                </ul>
+            </div>
+            <div class="day">
+                Free &nbsp; Delivery
+            </div>
         </div>
-        <div>
-            <ul>
-                <li>
-                    <a href="{% url 'junatics:home_page' %}">Home</a>
-                </li>
-                <li>Catalog</li>
-                <li>
-                    <a href="{% url 'junatics:blog_page' %}">Blog</a>
-                </li>
-                <li>Page</li>
-                <li>About Us</li>
-            </ul>
-        </div>
-        <div class="day">
-            Free &nbsp; Delivery
-        </div>
-    </div>
         {% block content %} 
             
         {% endblock %}    
