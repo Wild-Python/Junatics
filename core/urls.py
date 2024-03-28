@@ -7,6 +7,7 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('core.apps.junatics.urls', namespace='junatics')),
+    path('blog/', include('core.apps.blog.urls', namespace='blog')),
 ]
 
 if settings.DEBUG:
