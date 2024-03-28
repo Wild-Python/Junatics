@@ -10,6 +10,3 @@ class HomePageView(TemplateView):
         context['junatics'] = Junatics.junatics.all()
         return context
 
-
-class BlogPageView(TemplateView):
-    template_name = 'junatics/blog.html'
