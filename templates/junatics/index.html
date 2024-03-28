@@ -1,60 +1,8 @@
-{% include 'base.html' %}
+{% extends 'base.html' %}
 {% load static %}
 {% block content %}
 
-    <div class="header">
-        <div class="frame1">
-            <img src="./junatics/junatics1-removebg-preview.png" alt="">
 
-            <div class="search">
-                <form action="">
-                    <input type="search" placeholder="Search Any Thing" class="bar">
-                </form>
-                <button>Search</button>
-            </div>
-        </div>
-        <!-- Frame -->
-        <div class="navmenu" id="show">
-            <div class="frame2" id="navLinks">
-                <i class="fa fa-times" aria-hidden="true" onclick="hide()"></i>
-                <div class="icons">
-                    <div><i class="fa-regular fa-user ic"></i></div>
-                    <span><a href="#">Sign In</a></span>
-                </div>
-                <div class="icons">
-                    <div><i class="fa-solid fa-cart-shopping ic"></i></div>
-                    <span><a href="#">Cart</a></span>
-                </div>
-                <div class="icons">
-                    <div><i class="fa-regular fa-heart ic"></i></div>
-                    <span>Likes</span>
-                </div>
-
-            </div>
-        </div>
-
-        <i class="fa fa-bars" aria-hidden="true" onclick="show()"></i>
-    </div>
-
-
-    <!-- Navbar -->
-    <div class="nav">
-        <div>
-            <button>Browse Categories</button>
-        </div>
-        <div>
-            <ul>
-                <li>Home</li>
-                <li>Catalog</li>
-                <li><a href="#">Blog</a></li>
-                <li>Page</li>
-                <li>About Us</li>
-            </ul>
-        </div>
-        <div class="day">
-            Free &nbsp; Delivery
-        </div>
-    </div>
     <div class="main-rectangle">
         <div class="rectangle">
             <div class="frame3">
@@ -69,7 +17,7 @@
 
             </div>
             <div class="frame4">
-                <img src="./junatics/bread board.jpg" alt="">
+                <img src="{% static 'assests/product-images/bread board.jpg' %}" alt="">
                 <div class="price">Only <br>399</div>
             </div>
         </div>
@@ -86,7 +34,7 @@
 
             </div>
             <div class="frame4">
-                <img src="./junatics/Arduino-Uno-R3-SMD-Micro-USB-in-Pakistan-550x550.webp" alt="">
+                <img src="{% static 'assests/product-images/Arduino-Uno-R3-SMD-Micro-USB-in-Pakistan-550x550.webp' %}" alt="">
                 <div class="price">Only <br> 1499</div>
             </div>
         </div>
@@ -103,7 +51,7 @@
 
             </div>
             <div class="frame4">
-                <img src="./junatics/jumper wires male to male.webp" alt="">
+                <img src="{% static 'assests/product-images/jumper wires male to female.webp' %}" alt="">
                 <div class="price">
                     <center>Only <br> 99</center>
                 </div>
@@ -122,21 +70,21 @@
             <div class="rectangle2">
 
                 <div class="frame5">
-                    <img src="./junatics/oled display.jpg" alt="">
+                    <img src="{% static 'assests/product-images/oled display.jpg' %}" alt="">
                     <div>
                         <div class="name">OLED Display</div>
                         <span>(0.96 Inch)</span>
                     </div>
                 </div>
                 <div class="frame5">
-                    <img src="./junatics/ir sensor.jpeg" alt="">
+                    <img src="{% static 'assests/product-images/ir sensor.jpeg' %}" alt="">
                     <div>
                         <div class="name">IR Sensor</div>
                         <span>(Fire Detector)</span>
                     </div>
                 </div>
                 <div class="frame5">
-                    <img src="./junatics/pir.webp" alt="">
+                    <img src="{% static 'assests/product-images/pir.webp' %}" alt="">
                     <div>
                         <div class="name">PIR Sensor</div>
                         <span>(Motion Detector)</span>
@@ -228,397 +176,398 @@
         </div>
          
             
-        <div class="rectangle4">
-            <div class="frame1">
-                <div class="img">
-                    <img src="./junatics/dht11- temperature and humidity sensor.webp">
-                    <div class="heart"><i class="fa-regular fa-heart"></i></div>
-                </div>
-                <div class="name">
-                    Temp and Humidity Sensor
-                </div>
-                <div class="price">
-                    Rs:399
-                </div>
-                <div>
-                    <i class="fa-solid fa-star" style="color: #eda415;"></i>
-                    <i class="fa-solid fa-star" style="color: #eda415;"></i>
-                    <i class="fa-solid fa-star" style="color: #eda415;"></i>
-                    <i class="fa-solid fa-star" style="color: #eda415;"></i>
-                    <i class="fa-solid fa-star-half-stroke" style="color: #eda415;"></i>
-                </div>
-                <div class="c-button">
-                    <button>View More
-                        <img src="./Assets/cart pic.png" alt="" srcset="">
-                    </button>
-                </div>
-            </div>
-            <div class="frame1">
-                <div class="img">
-                    <img src="./junatics/capacitive touch sensor.jpg">
-                    <div class="heart"><i class="fa-regular fa-heart"></i></div>
-                </div>
-                <div class="name">
-                    Touch Sensor Switch
-                </div>
-                <div class="price">
-                    RS:169
-                </div>
-                <div>
-                    <i class="fa-solid fa-star" style="color: #eda415;"></i>
-                    <i class="fa-solid fa-star" style="color: #eda415;"></i>
-                    <i class="fa-solid fa-star" style="color: #eda415;"></i>
-                    <i class="fa-solid fa-star" style="color: #eda415;"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-                <div class="c-button">
-                    <button>View More
-                        <img src="./Assets/cart pic.png" alt="" srcset="">
-                    </button>
-                </div>
-            </div>
-            <div class="frame1">
-                <div class="img">
-                    <img src="./junatics/gear motor with wheel.jpg">
-                    <div class="heart"><i class="fa-regular fa-heart"></i></div>
-                </div>
-                <div class="name">
-                    Gear Motor with Wheel
-                </div>
-                <div class="price">
-                    Rs:299
-                </div>
-                <div>
-                    <i class="fa-solid fa-star" style="color: #eda415;"></i>
-                    <i class="fa-solid fa-star" style="color: #eda415;"></i>
-                    <i class="fa-solid fa-star" style="color: #eda415;"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-                <div class="c-button">
-                    <button>View More
-                        <img src="./Assets/cart pic.png" alt="" srcset="">
-                    </button>
-                </div>
-            </div>
-            <div class="frame1">
-                <div class="img">
-                    <img src="./junatics/l298n-h bridge motor driver module.jpg">
-                    <div class="heart"><i class="fa-regular fa-heart"></i></div>
-                </div>
-                <div class="name">
-                    Bridge Motor Driver Module
-                </div>
-                <div class="price">
-                    Rs:849
-                </div>
-                <div>
-                    <i class="fa-solid fa-star" style="color: #eda415;"></i>
-                    <i class="fa-solid fa-star" style="color: #eda415;"></i>
-                    <i class="fa-solid fa-star" style="color: #eda415;"></i>
-                    <i class="fa-solid fa-star" style="color: #eda415;"></i>
-                    <i class="fa-solid fa-star" style="color: #eda415;"></i>
-                </div>
-                <div class="c-button">
-                    <button>View More
-                        <img src="./Assets/cart pic.png" alt="" srcset="">
-                    </button>
-                </div>
-            </div>
-            <div class="frame1">
-                <div class="img">
-                    <img src="./junatics/hc-05 sonar sensor.jpg">
-                    <div class="heart"><i class="fa-regular fa-heart"></i></div>
-                </div>
-                <div class="name">
-                    HC-05 Sonar sensor
-                </div>
-                <div class="price">
-                    Rs:279
-                </div>
-                <div>
-                    <i class="fa-solid fa-star" style="color: #eda415;"></i>
-                    <i class="fa-solid fa-star" style="color: #eda415;"></i>
-                    <i class="fa-solid fa-star" style="color: #eda415;"></i>
-                    <i class="fa-solid fa-star" style="color: #eda415;"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-                <div class="c-button">
-                    <button>View More
-                        <img src="./Assets/cart pic.png" alt="" srcset="">
-                    </button>
-                </div>
-            </div>
-            <div class="frame1">
-                <div class="img">
-                    <img src="./junatics/lcd.jpg">
-                    <div class="heart"><i class="fa-regular fa-heart"></i></div>
-                </div>
-                <div class="name">
-                    LCD Display without BackLight
-                </div>
-                <div class="price">
-                    Rs:319
-                </div>
-                <div>
-                    <i class="fa-solid fa-star" style="color: #eda415;"></i>
-                    <i class="fa-solid fa-star" style="color: #eda415;"></i>
-                    <i class="fa-solid fa-star" style="color: #eda415;"></i>
-                    <i class="fa-solid fa-star" style="color: #eda415;"></i>
-                    <i class="fa-solid fa-star" style="color: #eda415;"></i>
-
-                </div>
-                <div class="c-button">
-                    <button>View More
-                        <img src="./Assets/cart pic.png" alt="" srcset="">
-                    </button>
-                </div>
-            </div>
-            <div class="frame1">
-                <div class="img">
-                    <img src="./junatics/lcd2.webp">
-                    <div class="heart"><i class="fa-regular fa-heart"></i></div>
-                </div>
-                <div class="name">
-                    LCD Display with BackLight
-                </div>
-                <div class="price">
-                    Rs:519
-                </div>
-                <div>
-                    <i class="fa-solid fa-star" style="color: #eda415;"></i>
-                    <i class="fa-solid fa-star" style="color: #eda415;"></i>
-                    <i class="fa-solid fa-star" style="color: #eda415;"></i>
-                    <i class="fa-solid fa-star-half-stroke" style="color: #eda415;"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-                <div class="c-button">
-                    <button>View More
-                        <img src="./Assets/cart pic.png" alt="" srcset="">
-                    </button>
-                </div>
-            </div>
-            <div class="frame1">
-                <div class="img">
-                    <img src="./junatics/ldr.jpg">
-                    <div class="heart"><i class="fa-regular fa-heart"></i></div>
-                </div>
-                <div class="name">
-                    LDR Sensor
-                </div>
-                <div class="price">
-                    Rs:29
-                </div>
-                <div>
-                    <i class="fa-solid fa-star" style="color: #eda415;"></i>
-                    <i class="fa-solid fa-star" style="color: #eda415;"></i>
-                    <i class="fa-solid fa-star" style="color: #eda415;"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-                <div class="c-button">
-                    <button>View More
-                        <img src="./Assets/cart pic.png" alt="" srcset="">
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div class="rectangle4">
-            <div class="frame1">
-                <div class="img">
-                    <img src="./junatics/light-dependant-resistor-ldr-module.jpg">
-                    <div class="heart"><i class="fa-regular fa-heart"></i></div>
-                </div>
-                <div class="name">
-                    LDR Sensor Module
-                </div>
-                <div class="price">
-                    Rs:139
-                </div>
-                <div>
-                    <i class="fa-solid fa-star" style="color: #eda415;"></i>
-                    <i class="fa-solid fa-star" style="color: #eda415;"></i>
-                    <i class="fa-solid fa-star" style="color: #eda415;"></i>
-                    <i class="fa-solid fa-star" style="color: #eda415;"></i>
-                    <i class="fa-solid fa-star-half-stroke" style="color: #eda415;"></i>
-                </div>
-                <div class="c-button">
-                    <button>View More
-                        <img src="./Assets/cart pic.png" alt="" srcset="">
-                    </button>
-                </div>
-            </div>
-            <div class="frame1">
-                <div class="img">
-                    <img src="./junatics/lm393 mic module.jpg">
-                    <div class="heart"><i class="fa-regular fa-heart"></i></div>
-                </div>
-                <div class="name">
-                    Lm Mic Module
-                </div>
-                <div class="price">
-                    Rs:239
-                </div>
-                <div>
-                    <i class="fa-solid fa-star" style="color: #eda415;"></i>
-                    <i class="fa-solid fa-star" style="color: #eda415;"></i>
-                    <i class="fa-solid fa-star" style="color: #eda415;"></i>
-                    <i class="fa-solid fa-star" style="color: #eda415;"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-                <div class="c-button">
-                    <button>View More
-                        <img src="./Assets/cart pic.png" alt="" srcset="">
-                    </button>
-                </div>
-            </div>
-            <div class="frame1">
-                <div class="img">
-                    <img src="./junatics/LM2596 Buck Adjustable Step Down Power Supply Module DC-DC Converter.webp">
-                    <div class="heart"><i class="fa-regular fa-heart"></i></div>
-                </div>
-                <div class="name">
-                    Step Down Buck Convertor
-                </div>
-                <div class="price">
-                    Rs:269
-                </div>
-                <div>
-                    <i class="fa-solid fa-star" style="color: #eda415;"></i>
-                    <i class="fa-solid fa-star" style="color: #eda415;"></i>
-                    <i class="fa-solid fa-star" style="color: #eda415;"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-                <div class="c-button">
-                    <button>View More
-                        <img src="./Assets/cart pic.png" alt="" srcset="">
-                    </button>
-                </div>
-            </div>
-            <div class="frame1">
-                <div class="img">
-                    <img src="./junatics/mpu 5060.jpg">
-                    <div class="heart"><i class="fa-regular fa-heart"></i></div>
-                </div>
-                <div class="name">
-                    GyroScope Sensor
-                </div>
-                <div class="price">
-                    Rs:419
-                </div>
-                <div>
-                    <i class="fa-solid fa-star" style="color: #eda415;"></i>
-                    <i class="fa-solid fa-star" style="color: #eda415;"></i>
-                    <i class="fa-solid fa-star" style="color: #eda415;"></i>
-                    <i class="fa-solid fa-star" style="color: #eda415;"></i>
-                    <i class="fa-solid fa-star" style="color: #eda415;"></i>
-                </div>
-                <div class="c-button">
-                    <button>View More
-                        <img src="./Assets/cart pic.png" alt="" srcset="">
-                    </button>
-                </div>
-            </div>
-            <div class="frame1">
-                <div class="img">
-                    <img src="./junatics/numpad full digits.png">
-                    <div class="heart"><i class="fa-regular fa-heart"></i></div>
-                </div>
-                <div class="name">
-                    Full Digit Numpad
-                </div>
-                <div class="price">
-                    Rs:249
-                </div>
-                <div>
-                    <i class="fa-solid fa-star" style="color: #eda415;"></i>
-                    <i class="fa-solid fa-star" style="color: #eda415;"></i>
-                    <i class="fa-solid fa-star" style="color: #eda415;"></i>
-                    <i class="fa-solid fa-star" style="color: #eda415;"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-                <div class="c-button">
-                    <button>View More
-                        <img src="./Assets/cart pic.png" alt="" srcset="">
-                    </button>
-                </div>
-            </div>
-            <div class="frame1">
-                <div class="img">
-                    <img src="./junatics/paste.jpg">
-                    <div class="heart"><i class="fa-regular fa-heart"></i></div>
-                </div>
-                <div class="name">
-                    Soldring Paste
-                </div>
-                <div class="price">
-                    Rs:49
-                </div>
-                <div>
-                    <i class="fa-solid fa-star" style="color: #eda415;"></i>
-                    <i class="fa-solid fa-star" style="color: #eda415;"></i>
-                    <i class="fa-solid fa-star" style="color: #eda415;"></i>
-                    <i class="fa-solid fa-star" style="color: #eda415;"></i>
-                    <i class="fa-solid fa-star" style="color: #eda415;"></i>
-
-                </div>
-                <div class="c-button">
-                    <button>View More
-                        <img src="./Assets/cart pic.png" alt="" srcset="">
-                    </button>
-                </div>
-            </div>
-            <div class="frame1">
-                <div class="img">
-                    <img src="./junatics/soldering iron.jpg">
-                    <div class="heart"><i class="fa-regular fa-heart"></i></div>
-                </div>
-                <div class="name">
-                    Soldering Iron 40W
-                </div>
-                <div class="price">
-                    Rs:449
-                </div>
-                <div>
-                    <i class="fa-solid fa-star" style="color: #eda415;"></i>
-                    <i class="fa-solid fa-star" style="color: #eda415;"></i>
-                    <i class="fa-solid fa-star" style="color: #eda415;"></i>
-                    <i class="fa-solid fa-star-half-stroke" style="color: #eda415;"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-                <div class="c-button">
-                    <button>View More
-                        <img src="./Assets/cart pic.png" alt="" srcset="">
-                    </button>
-                </div>
-            </div>
-            <div class="frame1">
-                <div class="img">
-                    <img src="./junatics/soldering wire.jpg">
-                    <div class="heart"><i class="fa-regular fa-heart"></i></div>
-                </div>
-                <div class="name">
-                    Soldring Wire
-                </div>
-                <div class="price">
-                    Rs:249
-                </div>
-                <div>
-                    <i class="fa-solid fa-star" style="color: #eda415;"></i>
-                    <i class="fa-solid fa-star" style="color: #eda415;"></i>
-                    <i class="fa-solid fa-star" style="color: #eda415;"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-                <div class="c-button">
-                    <button>View More
-                        <img src="./Assets/cart pic.png" alt="" srcset="">
-                    </button>
-                </div>
-            </div>
-        </div>
+{#        <div class="rectangle4">#}
+{#            <div class="frame1">#}
+{#                <div class="img">#}
+{#                    <img src="./junatics/dht11- temperature and humidity sensor.webp">#}
+{#                    <div class="heart"><i class="fa-regular fa-heart"></i></div>#}
+{#                </div>#}
+{#                <div class="name">#}
+{#                    Temp and Humidity Sensor#}
+{#                </div>#}
+{#                <div class="price">#}
+{#                    Rs:399#}
+{#                </div>#}
+{#                <div>#}
+{#                    <i class="fa-solid fa-star" style="color: #eda415;"></i>#}
+{#                    <i class="fa-solid fa-star" style="color: #eda415;"></i>#}
+{#                    <i class="fa-solid fa-star" style="color: #eda415;"></i>#}
+{#                    <i class="fa-solid fa-star" style="color: #eda415;"></i>#}
+{#                    <i class="fa-solid fa-star-half-stroke" style="color: #eda415;"></i>#}
+{#                </div>#}
+{#                <div class="c-button">#}
+{#                    <button>View More#}
+{#                        <img src="./Assets/cart pic.png" alt="" srcset="">#}
+{#                    </button>#}
+{#                </div>#}
+{#            </div>#}
+{#            <div class="frame1">#}
+{#                <div class="img">#}
+{#                    <img src="./junatics/capacitive touch sensor.jpg">#}
+{#                    <div class="heart"><i class="fa-regular fa-heart"></i></div>#}
+{#                </div>#}
+{#                <div class="name">#}
+{#                    Touch Sensor Switch#}
+{#                </div>#}
+{#                <div class="price">#}
+{#                    RS:169#}
+{#                </div>#}
+{#                <div>#}
+{#                    <i class="fa-solid fa-star" style="color: #eda415;"></i>#}
+{#                    <i class="fa-solid fa-star" style="color: #eda415;"></i>#}
+{#                    <i class="fa-solid fa-star" style="color: #eda415;"></i>#}
+{#                    <i class="fa-solid fa-star" style="color: #eda415;"></i>#}
+{#                    <i class="fa-regular fa-star"></i>#}
+{#                </div>#}
+{#                <div class="c-button">#}
+{#                    <button>View More#}
+{#                        <img src="./Assets/cart pic.png" alt="" srcset="">#}
+{#                    </button>#}
+{#                </div>#}
+{#            </div>#}
+{#            <div class="frame1">#}
+{#                <div class="img">#}
+{#                    <img src="./junatics/gear motor with wheel.jpg">#}
+{#                    <div class="heart"><i class="fa-regular fa-heart"></i></div>#}
+{#                </div>#}
+{#                <div class="name">#}
+{#                    Gear Motor with Wheel#}
+{#                </div>#}
+{#                <div class="price">#}
+{#                    Rs:299#}
+{#                </div>#}
+{#                <div>#}
+{#                    <i class="fa-solid fa-star" style="color: #eda415;"></i>#}
+{#                    <i class="fa-solid fa-star" style="color: #eda415;"></i>#}
+{#                    <i class="fa-solid fa-star" style="color: #eda415;"></i>#}
+{#                    <i class="fa-regular fa-star"></i>#}
+{#                    <i class="fa-regular fa-star"></i>#}
+{#                </div>#}
+{#                <div class="c-button">#}
+{#                    <button>View More#}
+{#                        <img src="./Assets/cart pic.png" alt="" srcset="">#}
+{#                    </button>#}
+{#                </div>#}
+{#            </div>#}
+{#            <div class="frame1">#}
+{#                <div class="img">#}
+{#                    <img src="./junatics/l298n-h bridge motor driver module.jpg">#}
+{#                    <div class="heart"><i class="fa-regular fa-heart"></i></div>#}
+{#                </div>#}
+{#                <div class="name">#}
+{#                    Bridge Motor Driver Module#}
+{#                </div>#}
+{#                <div class="price">#}
+{#                    Rs:849#}
+{#                </div>#}
+{#                <div>#}
+{#                    <i class="fa-solid fa-star" style="color: #eda415;"></i>#}
+{#                    <i class="fa-solid fa-star" style="color: #eda415;"></i>#}
+{#                    <i class="fa-solid fa-star" style="color: #eda415;"></i>#}
+{#                    <i class="fa-solid fa-star" style="color: #eda415;"></i>#}
+{#                    <i class="fa-solid fa-star" style="color: #eda415;"></i>#}
+{#                </div>#}
+{#                <div class="c-button">#}
+{#                    <button>View More#}
+{#                        <img src="./Assets/cart pic.png" alt="" srcset="">#}
+{#                    </button>#}
+{#                </div>#}
+{#            </div>#}
+{#            <div class="frame1">#}
+{#                <div class="img">#}
+{#                    <img src="./junatics/hc-05 sonar sensor.jpg">#}
+{#                    <div class="heart"><i class="fa-regular fa-heart"></i></div>#}
+{#                </div>#}
+{#                <div class="name">#}
+{#                    HC-05 Sonar sensor#}
+{#                </div>#}
+{#                <div class="price">#}
+{#                    Rs:279#}
+{#                </div>#}
+{#                <div>#}
+{#                    <i class="fa-solid fa-star" style="color: #eda415;"></i>#}
+{#                    <i class="fa-solid fa-star" style="color: #eda415;"></i>#}
+{#                    <i class="fa-solid fa-star" style="color: #eda415;"></i>#}
+{#                    <i class="fa-solid fa-star" style="color: #eda415;"></i>#}
+{#                    <i class="fa-regular fa-star"></i>#}
+{#                </div>#}
+{#                <div class="c-button">#}
+{#                    <button>View More#}
+{#                        <img src="./Assets/cart pic.png" alt="" srcset="">#}
+{#                    </button>#}
+{#                </div>#}
+{#            </div>#}
+{#            <div class="frame1">#}
+{#                <div class="img">#}
+{#                    <img src="./junatics/lcd.jpg">#}
+{#                    <div class="heart"><i class="fa-regular fa-heart"></i></div>#}
+{#                </div>#}
+{#                <div class="name">#}
+{#                    LCD Display without BackLight#}
+{#                </div>#}
+{#                <div class="price">#}
+{#                    Rs:319#}
+{#                </div>#}
+{#                <div>#}
+{#                    <i class="fa-solid fa-star" style="color: #eda415;"></i>#}
+{#                    <i class="fa-solid fa-star" style="color: #eda415;"></i>#}
+{#                    <i class="fa-solid fa-star" style="color: #eda415;"></i>#}
+{#                    <i class="fa-solid fa-star" style="color: #eda415;"></i>#}
+{#                    <i class="fa-solid fa-star" style="color: #eda415;"></i>#}
+{##}
+{#                </div>#}
+{#                <div class="c-button">#}
+{#                    <button>View More#}
+{#                        <img src="./Assets/cart pic.png" alt="" srcset="">#}
+{#                    </button>#}
+{#                </div>#}
+{#            </div>#}
+{#            <div class="frame1">#}
+{#                <div class="img">#}
+{#                    <img src="./junatics/lcd2.webp">#}
+{#                    <div class="heart"><i class="fa-regular fa-heart"></i></div>#}
+{#                </div>#}
+{#                <div class="name">#}
+{#                    LCD Display with BackLight#}
+{#                </div>#}
+{#                <div class="price">#}
+{#                    Rs:519#}
+{#                </div>#}
+{#                <div>#}
+{#                    <i class="fa-solid fa-star" style="color: #eda415;"></i>#}
+{#                    <i class="fa-solid fa-star" style="color: #eda415;"></i>#}
+{#                    <i class="fa-solid fa-star" style="color: #eda415;"></i>#}
+{#                    <i class="fa-solid fa-star-half-stroke" style="color: #eda415;"></i>#}
+{#                    <i class="fa-regular fa-star"></i>#}
+{#                </div>#}
+{#                <div class="c-button">#}
+{#                    <button>View More#}
+{#                        <img src="./Assets/cart pic.png" alt="" srcset="">#}
+{#                    </button>#}
+{#                </div>#}
+{#            </div>#}
+{#            <div class="frame1">#}
+{#                <div class="img">#}
+{#                    <img src="./junatics/ldr.jpg">#}
+{#                    <div class="heart"><i class="fa-regular fa-heart"></i></div>#}
+{#                </div>#}
+{#                <div class="name">#}
+{#                    LDR Sensor#}
+{#                </div>#}
+{#                <div class="price">#}
+{#                    Rs:29#}
+{#                </div>#}
+{#                <div>#}
+{#                    <i class="fa-solid fa-star" style="color: #eda415;"></i>#}
+{#                    <i class="fa-solid fa-star" style="color: #eda415;"></i>#}
+{#                    <i class="fa-solid fa-star" style="color: #eda415;"></i>#}
+{#                    <i class="fa-regular fa-star"></i>#}
+{#                    <i class="fa-regular fa-star"></i>#}
+{#                </div>#}
+{#                <div class="c-button">#}
+{#                    <button>View More#}
+{#                        <img src="./Assets/cart pic.png" alt="" srcset="">#}
+{#                    </button>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{#        <div class="rectangle4">#}
+{#            <div class="frame1">#}
+{#                <div class="img">#}
+{#                    <img src="./junatics/light-dependant-resistor-ldr-module.jpg">#}
+{#                    <div class="heart"><i class="fa-regular fa-heart"></i></div>#}
+{#                </div>#}
+{#                <div class="name">#}
+{#                    LDR Sensor Module#}
+{#                </div>#}
+{#                <div class="price">#}
+{#                    Rs:139#}
+{#                </div>#}
+{#                <div>#}
+{#                    <i class="fa-solid fa-star" style="color: #eda415;"></i>#}
+{#                    <i class="fa-solid fa-star" style="color: #eda415;"></i>#}
+{#                    <i class="fa-solid fa-star" style="color: #eda415;"></i>#}
+{#                    <i class="fa-solid fa-star" style="color: #eda415;"></i>#}
+{#                    <i class="fa-solid fa-star-half-stroke" style="color: #eda415;"></i>#}
+{#                </div>#}
+{#                <div class="c-button">#}
+{#                    <button>View More#}
+{#                        <img src="./Assets/cart pic.png" alt="" srcset="">#}
+{#                    </button>#}
+{#                </div>#}
+{#            </div>#}
+{#            <div class="frame1">#}
+{#                <div class="img">#}
+{#                    <img src="./junatics/lm393 mic module.jpg">#}
+{#                    <div class="heart"><i class="fa-regular fa-heart"></i></div>#}
+{#                </div>#}
+{#                <div class="name">#}
+{#                    Lm Mic Module#}
+{#                </div>#}
+{#                <div class="price">#}
+{#                    Rs:239#}
+{#                </div>#}
+{#                <div>#}
+{#                    <i class="fa-solid fa-star" style="color: #eda415;"></i>#}
+{#                    <i class="fa-solid fa-star" style="color: #eda415;"></i>#}
+{#                    <i class="fa-solid fa-star" style="color: #eda415;"></i>#}
+{#                    <i class="fa-solid fa-star" style="color: #eda415;"></i>#}
+{#                    <i class="fa-regular fa-star"></i>#}
+{#                </div>#}
+{#                <div class="c-button">#}
+{#                    <button>View More#}
+{#                        <img src="./Assets/cart pic.png" alt="" srcset="">#}
+{#                    </button>#}
+{#                </div>#}
+{#            </div>#}
+{#            <div class="frame1">#}
+{#                <div class="img">#}
+{#                    <img src="./junatics/LM2596 Buck Adjustable Step Down Power Supply Module DC-DC Converter.webp">#}
+{#                    <div class="heart"><i class="fa-regular fa-heart"></i></div>#}
+{#                </div>#}
+{#                <div class="name">#}
+{#                    Step Down Buck Convertor#}
+{#                </div>#}
+{#                <div class="price">#}
+{#                    Rs:269#}
+{#                </div>#}
+{#                <div>#}
+{#                    <i class="fa-solid fa-star" style="color: #eda415;"></i>#}
+{#                    <i class="fa-solid fa-star" style="color: #eda415;"></i>#}
+{#                    <i class="fa-solid fa-star" style="color: #eda415;"></i>#}
+{#                    <i class="fa-regular fa-star"></i>#}
+{#                    <i class="fa-regular fa-star"></i>#}
+{#                </div>#}
+{#                <div class="c-button">#}
+{#                    <button>View More#}
+{#                        <img src="./Assets/cart pic.png" alt="" srcset="">#}
+{#                    </button>#}
+{#                </div>#}
+{#            </div>#}
+{#            <div class="frame1">#}
+{#                <div class="img">#}
+{#                    <img src="./junatics/mpu 5060.jpg">#}
+{#                    <div class="heart"><i class="fa-regular fa-heart"></i></div>#}
+{#                </div>#}
+{#                <div class="name">#}
+{#                    GyroScope Sensor#}
+{#                </div>#}
+{#                <div class="price">#}
+{#                    Rs:419#}
+{#                </div>#}
+{#                <div>#}
+{#                    <i class="fa-solid fa-star" style="color: #eda415;"></i>#}
+{#                    <i class="fa-solid fa-star" style="color: #eda415;"></i>#}
+{#                    <i class="fa-solid fa-star" style="color: #eda415;"></i>#}
+{#                    <i class="fa-solid fa-star" style="color: #eda415;"></i>#}
+{#                    <i class="fa-solid fa-star" style="color: #eda415;"></i>#}
+{#                </div>#}
+{#                <div class="c-button">#}
+{#                    <button>View More#}
+{#                        <img src="./Assets/cart pic.png" alt="" srcset="">#}
+{#                    </button>#}
+{#                </div>#}
+{#            </div>#}
+{#            <div class="frame1">#}
+{#                <div class="img">#}
+{#                    <img src="./junatics/numpad full digits.png">#}
+{#                    <div class="heart"><i class="fa-regular fa-heart"></i></div>#}
+{#                </div>#}
+{#                <div class="name">#}
+{#                    Full Digit Numpad#}
+{#                </div>#}
+{#                <div class="price">#}
+{#                    Rs:249#}
+{#                </div>#}
+{#                <div>#}
+{#                    <i class="fa-solid fa-star" style="color: #eda415;"></i>#}
+{#                    <i class="fa-solid fa-star" style="color: #eda415;"></i>#}
+{#                    <i class="fa-solid fa-star" style="color: #eda415;"></i>#}
+{#                    <i class="fa-solid fa-star" style="color: #eda415;"></i>#}
+{#                    <i class="fa-regular fa-star"></i>#}
+{#                </div>#}
+{#                <div class="c-button">#}
+{#                    <button>View More#}
+{#                        <img src="./Assets/cart pic.png" alt="" srcset="">#}
+{#                    </button>#}
+{#                </div>#}
+{#            </div>#}
+{#            <div class="frame1">#}
+{#                <div class="img">#}
+{#                    <img src="./junatics/paste.jpg">#}
+{#                    <div class="heart"><i class="fa-regular fa-heart"></i></div>#}
+{#                </div>#}
+{#                <div class="name">#}
+{#                    Soldring Paste#}
+{#                </div>#}
+{#                <div class="price">#}
+{#                    Rs:49#}
+{#                </div>#}
+{#                <div>#}
+{#                    <i class="fa-solid fa-star" style="color: #eda415;"></i>#}
+{#                    <i class="fa-solid fa-star" style="color: #eda415;"></i>#}
+{#                    <i class="fa-solid fa-star" style="color: #eda415;"></i>#}
+{#                    <i class="fa-solid fa-star" style="color: #eda415;"></i>#}
+{#                    <i class="fa-solid fa-star" style="color: #eda415;"></i>#}
+{##}
+{#                </div>#}
+{#                <div class="c-button">#}
+{#                    <button>View More#}
+{#                        <img src="./Assets/cart pic.png" alt="" srcset="">#}
+{#                    </button>#}
+{#                </div>#}
+{#            </div>#}
+{#            <div class="frame1">#}
+{#                <div class="img">#}
+{#                    <img src="./junatics/soldering iron.jpg">#}
+{#                    <div class="heart"><i class="fa-regular fa-heart"></i></div>#}
+{#                </div>#}
+{#                <div class="name">#}
+{#                    Soldering Iron 40W#}
+{#                </div>#}
+{#                <div class="price">#}
+{#                    Rs:449#}
+{#                </div>#}
+{#                <div>#}
+{#                    <i class="fa-solid fa-star" style="color: #eda415;"></i>#}
+{#                    <i class="fa-solid fa-star" style="color: #eda415;"></i>#}
+{#                    <i class="fa-solid fa-star" style="color: #eda415;"></i>#}
+{#                    <i class="fa-solid fa-star-half-stroke" style="color: #eda415;"></i>#}
+{#                    <i class="fa-regular fa-star"></i>#}
+{#                </div>#}
+{#                <div class="c-button">#}
+{#                    <button>View More#}
+{#                        <img src="./Assets/cart pic.png" alt="" srcset="">#}
+{#                    </button>#}
+{#                </div>#}
+{#            </div>#}
+{#            <div class="frame1">#}
+{#                <div class="img">#}
+{#                    <img src="./junatics/soldering wire.jpg">#}
+{#                    <div class="heart"><i class="fa-regular fa-heart"></i></div>#}
+{#                </div>#}
+{#                <div class="name">#}
+{#                    Soldring Wire#}
+{#                </div>#}
+{#                <div class="price">#}
+{#                    Rs:249#}
+{#                </div>#}
+{#                <div>#}
+{#                    <i class="fa-solid fa-star" style="color: #eda415;"></i>#}
+{#                    <i class="fa-solid fa-star" style="color: #eda415;"></i>#}
+{#                    <i class="fa-solid fa-star" style="color: #eda415;"></i>#}
+{#                    <i class="fa-regular fa-star"></i>#}
+{#                    <i class="fa-regular fa-star"></i>#}
+{#                </div>#}
+{#                <div class="c-button">#}
+{#                    <button>View More#}
+{#                        <img src="./Assets/cart pic.png" alt="" srcset="">#}
+{#                    </button>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
     </div>
+    
     <div class="Nav_Dots">
         <span class="Dot" onclick="go_Prev()" id="Dot1"></span>
         <span class="Dot" onclick="go_Center()" id="Dot2"></span>
@@ -635,7 +584,7 @@
         <div class="frame1" id="Frame1">
             <div class="mini">
                 <div class="frm1">
-                    <img src="./junatics/rfid module.jpg" style="width: 90%;">
+                    <img src="{% static 'assests/product-images/rfid module.jpg' %}" style="width: 90%;">
                 </div>
                 <div class="frm2">
                     <div class="name">RFID Module</div>
@@ -650,7 +599,7 @@
                     </div>
                     <div class="c-button">
                         <button>View More
-                            <img src="./Assets/cart pic.png" alt="" srcset="">
+                            <img src="{% static 'assests/website-images/cart pic.png' %}" alt="" srcset="">
                         </button>
                         <div class="heart"><i class="fa-regular fa-heart"></i></div>
                     </div>
@@ -658,7 +607,7 @@
             </div>
             <div class="mini">
                 <div class="frm1">
-                    <img src="./junatics/servo motor 9g.jpg" class="img">
+                    <img src="{% static 'assests/product-images/servo motor 9g.jpg' %}" class="img">
                 </div>
                 <div class="frm2" id="fr2">
                     <div class="name">Servo Motor 9-G</div>
@@ -673,7 +622,7 @@
                     </div>
                     <div class="c-button">
                         <button>View More
-                            <img src="./Assets/cart pic.png" alt="" srcset="">
+                            <img src="{% static 'assests/website-images/cart pic.png' %}" alt="" srcset="">
                         </button>
                         <div class="heart"><i class="fa-regular fa-heart"></i></div>
                     </div>
@@ -686,10 +635,12 @@
         </div>
         <div class="frame2">
             <div class="rect1">
-                <div class="img1"><img src="./junatics/rtc real time clock.jpg"></div>
+                <div class="img1">
+                    <img src="{% static 'assests/product-images/rtc real time clock.jpg' %}" alt="">
+                </div>
                 <div>
                     <div class="name">Real Time Clock without Cell</div>
-                    <div class="price">Rs:199</div>
+                    <div class="price">Rs:199</div> 
                     <!-- <div class="star">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -701,7 +652,9 @@
                 </div>
             </div>
             <div class="rect1">
-                <div class="img1"><img src="./junatics/rtc with cell.jpg" alt=""></div>
+                <div class="img1">
+                    <img src="{% static 'assests/product-images/rtc real time clock.jpg' %}" alt="">
+                    </div>
                 <div>
                     <div class="name">Real Time Clock With Cell</div>
                     <div class="price">Rs:279</div>
@@ -719,7 +672,9 @@
     </div>
     <div class="rectangle7">
         <div class="frame1">
-            <div class="img"><img src="./Assets/crown.png"></div>
+            <div class="img">
+                <img src="{% static 'assests/website-images/crown.png' %}">
+            </div>
             <div>
                 <div class="nm1">Best Quality</div>
                 <div class="nm2">Quality in low price </div>
@@ -745,11 +700,11 @@
         <div class="rectangle8">
             <div class="frame1">
                 <div class="frm1">
-                    <img src="./junatics/ihtasham.jpg">
+                    <img src="{% static 'assests/website-images/ihtasham.jpg' %}">
                     <div class="name">Ch Ihtasham <br>(Web Developer)</div>
                 </div>
                 <div class="txt">
-                    I'm a Mern Stack Developer I builds applications and websites from a visual perspective
+                    I'm a Mern Stack Developer I build applications and websites from a visual perspective
                     <br> For Web Projects <br> <i>Contact:0303-7709300</i>
 
                 </div>
@@ -857,6 +812,8 @@
             </div>
         </div>
     </div>
+    
+    {% comment %} footer {% endcomment %}
     <div class="fotter">
         <div class="frame1">
             <div class="news">CEO: <i>Rehan Younas</i> </div>
