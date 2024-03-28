@@ -34,5 +34,3 @@ dbshell:
 .PHONY: tailstart
 tailstart:
 	python manage.py tailwind start
-
-
