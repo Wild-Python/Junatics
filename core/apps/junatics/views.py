@@ -1,5 +1,3 @@
-from django.shortcuts import render
-
 from core.apps.junatics.models import Junatics
 from django.views.generic import TemplateView, ListView
 
@@ -13,3 +11,5 @@ class HomePageView(TemplateView):
         return context
 
 
+class BlogPageView(TemplateView):
+    template_name = 'junatics/blog.html'
