@@ -34,6 +34,7 @@ class Blog(models.Model):
     author = models.ForeignKey(User, on_delete=models.CASCADE, related_name='blog_author')
     title = models.CharField(max_length=200)
     excerpt = models.TextField(null=True)
+    category = models.ForeignKey(Category, on_delete=models.CASCADE, related_name='blog_category')
     slug = models.SlugField(max_length=250, unique_for_date='publish_date')
     publish_date = models.DateTimeField(default=timezone.now)
     status = models.CharField(max_length=10, choices=BlogManager.options, default='draft')
