@@ -33,6 +33,7 @@ INSTALLED_APPS = [
 
     # my apps
     'core.apps.junatics',
+    'core.apps.blog',
 ]
 
 MIDDLEWARE = [
